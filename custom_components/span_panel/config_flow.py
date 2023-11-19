@@ -173,8 +173,8 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         return self.async_show_menu(
             step_id="auth_menu",
             menu_options={
-                "auth_proximity",
-                "auth_token",
+                "auth_proximity": "Proof of Proximity (recommended)",
+                "auth_token": "Existing Auth Token",
             },
         )
 
